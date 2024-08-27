@@ -20,7 +20,7 @@ $ python calcolo_pasqua.py
 Calcolo della pasqua
 
 Inserire un anno tra 1583 e 2499 compresi
-
+__________________________________________
 Inserisci l'anno: 2024
 
 La Pasqua dell'anno 2024 cadrà il giorno 31 marzo
