@@ -6,7 +6,7 @@ def printf(formato, *args):
     sys.stdout.write(formato % args)
 
 
-print("Calcolo della pasqua \nInserire un anno tra 1583 e 2499 compresi")
+print("Calcolo della Pasqua \nInserire un anno tra 1583 e 2499 compresi")
 print("------------------------------------------------------")
 error = True
 year = 0
@@ -57,11 +57,11 @@ e = (2 * b + 4 * c + 6 * d + N) % 7
 
 if (d + e) < 10:
     if year < datetime.date.today().year:
-        printf("La pasqua dell'anno %d e' caduta il giorno %d marzo", year, (d + e + 22))
+        printf("La Pasqua dell'anno %d e' caduta il giorno %d marzo", year, (d + e + 22))
     else:
-        printf("La pasqua dell'anno %d cadra' il giorno %d marzo", year, (d + e + 22))
+        printf("La Pasqua dell'anno %d cadra' il giorno %d marzo", year, (d + e + 22))
 else:
     if year < datetime.date.today().year:
-        printf("La pasqua dell'anno %d e' caduta il giorno %d aprile", year, (d + e - 9))
+        printf("La Pasqua dell'anno %d e' caduta il giorno %d aprile", year, (d + e - 9))
     else:
-        printf("La pasqua dell'anno %d cadra' il giorno %d aprile", year, (d + e - 9))
+        printf("La Pasqua dell'anno %d cadra' il giorno %d aprile", year, (d + e - 9))
