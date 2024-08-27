@@ -56,12 +56,12 @@ d = (19 * a + M) % 30
 e = (2 * b + 4 * c + 6 * d + N) % 7
 
 if (d + e) < 10:
-    if year < datetime.date.today().year:
-        printf("La Pasqua dell'anno %d e' caduta il giorno %d marzo", year, (d + e + 22))
+    if year < datetime.date.today().year or (year == datetime.date.today().year and datetime.date.today().month > 3):
+        printf("La Pasqua dell'anno %d è caduta il giorno %d marzo", year, (d + e + 22))
     else:
-        printf("La Pasqua dell'anno %d cadra' il giorno %d marzo", year, (d + e + 22))
+        printf("La Pasqua dell'anno %d cadrà il giorno %d marzo", year, (d + e + 22))
 else:
-    if year < datetime.date.today().year:
-        printf("La Pasqua dell'anno %d e' caduta il giorno %d aprile", year, (d + e - 9))
+    if year < datetime.date.today().year or (year == datetime.date.today().year and datetime.date.today().month > 4):
+        printf("La Pasqua dell'anno %d è caduta il giorno %d aprile", year, (d + e - 9))
     else:
-        printf("La Pasqua dell'anno %d cadra' il giorno %d aprile", year, (d + e - 9))
+        printf("La Pasqua dell'anno %d cadrà il giorno %d aprile", year, (d + e - 9))
